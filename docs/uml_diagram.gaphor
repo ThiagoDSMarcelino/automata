@@ -1464,7 +1464,7 @@ controlflow {
 <ref refid="4835830b-b60e-11f1-a9d1-00155d8a9ced"/>
 </class_>
 <name>
-<val>process</val>
+<val>accept</val>
 </name>
 <ownedParameter>
 <reflist>
@@ -1615,7 +1615,7 @@ controlflow {
 </UML:Parameter>
 <UML:Parameter id="50486f00-b615-11f1-8675-00155d8a9ced">
 <lowerValue>
-<ref refid="50488459-b615-11f1-a869-00155d8a9ced"/>
+<ref refid="cbea4cc0-beb7-11f1-88bd-95bb09adbd7b"/>
 </lowerValue>
 <name>
 <val>word</val>
@@ -1627,31 +1627,9 @@ controlflow {
 <val>string</val>
 </typeValue>
 <upperValue>
-<ref refid="50489f5b-b615-11f1-b930-00155d8a9ced"/>
+<ref refid="cbead87f-beb7-11f1-b24d-95bb09adbd7b"/>
 </upperValue>
 </UML:Parameter>
-<UML:LiteralInteger id="50488459-b615-11f1-a869-00155d8a9ced">
-<name>
-<val>1</val>
-</name>
-<owningLower>
-<ref refid="50486f00-b615-11f1-8675-00155d8a9ced"/>
-</owningLower>
-<value>
-<val>1</val>
-</value>
-</UML:LiteralInteger>
-<UML:LiteralUnlimitedNatural id="50489f5b-b615-11f1-b930-00155d8a9ced">
-<name>
-<val>*</val>
-</name>
-<owningUpper>
-<ref refid="50486f00-b615-11f1-8675-00155d8a9ced"/>
-</owningUpper>
-<value>
-<val>*</val>
-</value>
-</UML:LiteralUnlimitedNatural>
 <UML:LiteralInteger id="7eb96d6b-b615-11f1-bd12-00155d8a9ced">
 <name>
 <val>1</val>
@@ -4558,5 +4536,27 @@ controlflow {
 <ref refid="51ba312d-b6fa-11f1-9e4a-00155d8a9ced"/>
 </specific>
 </UML:Generalization>
+<UML:LiteralInteger id="cbea4cc0-beb7-11f1-88bd-95bb09adbd7b">
+<name>
+<val>0</val>
+</name>
+<owningLower>
+<ref refid="50486f00-b615-11f1-8675-00155d8a9ced"/>
+</owningLower>
+<value>
+<val>0</val>
+</value>
+</UML:LiteralInteger>
+<UML:LiteralUnlimitedNatural id="cbead87f-beb7-11f1-b24d-95bb09adbd7b">
+<name>
+<val>*</val>
+</name>
+<owningUpper>
+<ref refid="50486f00-b615-11f1-8675-00155d8a9ced"/>
+</owningUpper>
+<value>
+<val>*</val>
+</value>
+</UML:LiteralUnlimitedNatural>
 </model>
 </gaphor>
