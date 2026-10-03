@@ -7,14 +7,18 @@
 
 class Transition {
 protected:
-  std::string symbol;
-  std::shared_ptr<State> from;
-  std::vector<std::shared_ptr<State>> to;
+  std::string m_symbol;
+  std::shared_ptr<State> m_from;
+  std::vector<std::shared_ptr<State>> m_to;
 
 public:
   Transition(std::string symbol, std::shared_ptr<State> from,
              std::vector<std::shared_ptr<State>> to);
   virtual ~Transition() = default;
+
+  const std::string &get_symbol() const { return m_symbol; }
+  const std::shared_ptr<State> &get_from() const { return m_from; }
+  const std::vector<std::shared_ptr<State>> &get_to() const { return m_to; }
 };
 
 class TransitionD : public Transition {

@@ -10,4 +10,4 @@ file(GLOB_RECURSE AUTOMATA_SOURCES CONFIGURE_DEPENDS src/*.cpp)
 add_executable(automatapp ${AUTOMATA_SOURCES})
 
 target_include_directories(automatapp PRIVATE include)
-target_compile_options(automatapp PRIVATE -Wall -Wextra -Wpedantic)
+target_compile_options(automatapp PRIVATE -Wall -Wextra -Wpedantic -Wshadow)

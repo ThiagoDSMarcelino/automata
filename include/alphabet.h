@@ -5,13 +5,13 @@
 
 class Alphabet {
 private:
-  std::string name;
-  std::vector<std::string> symbols;
+  std::string m_name;
+  std::vector<std::string> m_symbols;
 
 public:
   Alphabet(std::string name, std::vector<std::string> symbols);
 
-  const std::string &get_name() const;
+  const std::string &get_name() const { return m_name; };
 
   const std::vector<std::string> &get_symbols() const;
 
